@@ -20,7 +20,7 @@ sans-serif; */
     --earthyTerracotta: #F4A261;
     --oliveGreenHerbal: #8D8741;
     --NeutralGrey: #DAD7CD;
-    
+
     /* skrift størrelser */
     --fs_h1_desktop: 3.25rem;
     --fs_h2_desktop: 2.5rem;
@@ -60,6 +60,53 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "Libre Baskerville", sans-serif;
+    margin-bottom: var(--text_spacer_desktop);
+    color: var(--font);
+}
+
+p,
+a {
+    font-family: "helvetica", sans-serif;
+    font-weight: var(--fs_medium);
+    line-height: 150%;
+    color: var(--font);
+}
+
+p {
+    margin-bottom: var(--text_spacer_desktop);
+    font-size: var(--p_desktop);
+}
+
+h1 {
+    margin-block: 50px var(--sektion_spacer_desktop);
+    font-size: var(--fs_h1_desktop);
+}
+
+h2 {
+    font-size: var(--fs_h2_desktop);
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--whiteWarm);
+}
+
+/* GENERAL STYLING */
+/* ___________________________________________________________________________________________________________________ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "librebaskerville", sans-serif;
     margin-bottom: var(--text_spacer_desktop);
     color: var(--font);
@@ -80,7 +127,6 @@ p {
 
 h1 {
     margin-block: 50px var(--sektion_spacer_desktop);
-    text-align: center;
     font-size: var(--fs_h1_desktop);
 }
 
@@ -94,7 +140,36 @@ body {
 
 
 /* Navigation Styling */
+nav {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--elegantBurgundyRed);
+}
 
+.logo img {
+    width: 184px;
+    height: 33px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 40px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    color: white;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: var(--fs_bold);
+    font-size: var(--fs_h3_desktop);
+}
 
 
 
@@ -398,10 +473,192 @@ body {
 
 
 /* Food Story Page Styles her */
+.header_food_story {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 20px;
+}
 
+.left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-inline: 12rem;
+}
 
+.tag {
+    background: #d9bc86;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 48px;
+}
 
+.date {
+    color: #333;
+    font-size: 32px;
+}
 
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+.icon-block:hover {
+    color: black;
+}
+
+.icon {
+    font-size: 48px;
+    margin-bottom: 3px;
+}
+
+.gem-icon {
+    font-size: 48px;
+}
+
+.hero_image_food_story img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 50% 10%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.byline {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.content section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+.content section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.author-card {
+    text-align: center;
+    background-color: var(--NeutralGrey);
+}
+
+.author-card img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.sidebar h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #111;
+}
+
+.story-card {
+    background: #f0f0f0;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.story-card .story-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.story-info {
+    padding: 0.8rem;
+}
+
+.story-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    color: #222;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.author-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name {
+    font-size: 0.9rem;
+    color: #444;
+}
 
 
 
