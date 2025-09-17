@@ -60,7 +60,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "librebaskerville", sans-serif;
+    font-family: "Libre Baskerville", sans-serif;
     margin-bottom: var(--text_spacer_desktop);
     color: var(--font);
 }
@@ -80,7 +80,6 @@ p {
 
 h1 {
     margin-block: 50px var(--sektion_spacer_desktop);
-    text-align: center;
     font-size: var(--fs_h1_desktop);
 }
 
@@ -89,15 +88,43 @@ h2 {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--whiteWarm);
 }
 
 
 /* Navigation Styling */
 
+nav {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--elegantBurgundyRed);
+}
 
+.logo img {
+    width: 184px;
+    height: 33px;
+}
 
+.menu ul {
+    display: flex;
+    gap: 40px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    color: white;
+}
+
+.menu li a{
+    text-decoration: none;
+        font-family: Helvetica, Arial, sans-serif;
+            font-weight: var(--fs_bold);
+            font-size: var(--fs_h3_desktop);
+}
 
 
 
@@ -200,9 +227,107 @@ body {
 
 /* Landing Page Styles her */
 
+.Featured-Content {
+    height: 700px;
+    width: 100%;
+
+}
+
+.Featured-Content img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Featured-Card {
+    width: 320px;
+    border-radius: 12px;
+    background-color: white;
+    position: relative;
+    top: -250px;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Featured-Card h1 {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+}
+
+.Featured-Card p {
+    font-size: 14px;
+    margin: 8px 0 16px;
+}
+
+.Featured-Card a {
+    width: 155px;
+    padding: 8px 8px;
+    background-color: var(--earthyTerracotta);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--whiteWarm);
+    align-self: flex-end;
+}
 
 
+.Recipes {
+    padding: 0 120px;
+    margin: 50px 0;
+}
 
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(222px, 1fr));
+    gap: 30px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.card p {
+    margin: 10px 0 8px;
+    font-size: 18px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.author p {
+    font-size: 14px;
+}
+
+.allrecipes {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--earthyTerracotta);
+    text-decoration: none;
+    color: white;
+    float: right;
+    font-weight: 700;
+}
 
 
 
