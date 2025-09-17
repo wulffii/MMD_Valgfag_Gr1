@@ -498,10 +498,57 @@ body {
 
 
 /* Footer Styles her */
+footer {
+    background-color: var(--mallardBlue);
+    display: flex;
+    flex-direction: column;
+    color: var(--whiteWarm);
+    justify-content: space-around;
+    padding: var(--text_spacer_desktop);
+    
+}
 
+.footer_row {
+    display: flex;
+    justify-content: center;
+    gap: 30rem;
+}
 
+footer div {
+    display: grid;
+    gap: 0.2rem;
+}
 
+footer p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: var(--fs_regular);
+}
 
+.bold {
+    font-weight: var(--fs_bold);
+    font-family: "georgiapro", sans-serif;
+    margin-bottom: 15px;
+}
+
+.quick_shortcuts a {
+    text-decoration: none;
+}
+
+.quick_shortcuts a:hover {
+    text-decoration: underline;
+}
+
+.bold:hover {
+    text-decoration: none;
+}
+
+.footer_note {
+    margin-top: 1rem;
+    font-size: 14px;
+    text-align: left;
+    width: auto;
+}
 
 
 
