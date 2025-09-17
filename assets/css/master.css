@@ -1,6 +1,599 @@
+/* TYPOGRAPHY */
+/* ___________________________________ */
+
+/* Libre Baskerville */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* font-family: "LibreBaskerville",
+sans-serif; */
+
+/* VARIABLES */
+/* ___________________________________ */
+
+:root {
+    /* farver */
+    --whiteWarm: #FAF9F7;
+    --charcoalBlack: #2B2B2B;
+    --mallardBlue: #264653;
+    --elegantBurgundyRed: #7B2C2C;
+    --warmMustardYellow: #E9C46A;
+    --earthyTerracotta: #F4A261;
+    --oliveGreenHerbal: #8D8741;
+    --NeutralGrey: #DAD7CD;
+    
+    /* skrift størrelser */
+    --fs_h1_desktop: 3.25rem;
+    --fs_h2_desktop: 2.5rem;
+    --fs_h3_desktop: 1.5rem;
+    --p_desktop: 1.375rem;
+    --card_button_text_desktop: 1.25rem;
+
+    /* font tykkelse */
+    --fs_bold: 700;
+    --fs_semibold: 600;
+    --fs_medium: 500;
+    --fs_regular: 400;
+
+    /* spacere */
+    --sektion_spacer_desktop: 6.25rem;
+    --text_spacer_desktop: 1.875rem;
+    --margin_desktop: 15.625rem;
+    --gap: 1.875rem;
+
+    /* border radius */
+    --border_radius_cards: 5px;
+    --border_radius_buttons: 10px;
+}
+
+/* GENERAL STYLING */
+/* ___________________________________________________________________________________________________________________ */
+
 * {
     box-sizing: border-box;
-}
-body {
     margin: 0;
+    padding: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "librebaskerville", sans-serif;
+    margin-bottom: var(--text_spacer_desktop);
+    color: var(--font);
+}
+
+p,
+a {
+    font-family: "helvetica", sans-serif;
+    font-weight: var(--fs_medium);
+    line-height: 150%;
+    color: var(--font);
+}
+
+p {
+    margin-bottom: var(--text_spacer_desktop);
+    font-size: var(--p_desktop);
+}
+
+h1 {
+    margin-block: 50px var(--sektion_spacer_desktop);
+    text-align: center;
+    font-size: var(--fs_h1_desktop);
+}
+
+h2 {
+    font-size: var(--fs_h2_desktop);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Navigation Styling */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Landing Page Styles her */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Chef Profile Page Styles her */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Food Story Page Styles her */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles her */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
