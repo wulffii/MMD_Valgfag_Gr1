@@ -226,6 +226,12 @@ nav {
 
 
 /* Landing Page Styles her */
+a {
+    transition: all 0.3s ease-in-out;
+}
+a:hover {
+    transform: scale(1.2);
+}
 
 .Featured-Content {
     height: 700px;
@@ -284,6 +290,13 @@ nav {
     flex-direction: column;
 }
 
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    transition: all 0.3s ease-in-out;
+}
 
 .card-grid {
     display: grid;
@@ -334,10 +347,8 @@ nav {
 }
 
 .split {
-    
     display: flex;
     padding: 0;
-    
     height: 500px;
     align-items: stretch;
     margin: 50px 0;
