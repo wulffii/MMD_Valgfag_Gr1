@@ -293,6 +293,7 @@ nav {
 
 .card img {
     width: 100%;
+    height: 200px;
     border-radius: 6px;
     object-fit: cover;
 }
@@ -331,7 +332,6 @@ nav {
     font-weight: 700;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
-
 
 .split {
     
@@ -398,6 +398,14 @@ nav {
 
 .COTD {
     background-color: var(--mallardBlue);
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.COTD h3 {
+    color: var(--whiteWarm);
+    font-size: var(--fs_h3_desktop);
+    margin-left: 120px;
 }
 
 .COTDwrapper {
@@ -407,11 +415,15 @@ nav {
     margin: 0 120px;
 }
 
-
 .ChefCard {
     padding: 10px;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--charcoalBlack);
+    background-color: var(--whiteWarm);
+    border-radius: 12px;
     
 }
 
@@ -420,6 +432,92 @@ nav {
     height: 100%;
     object-fit: cover;
 }
+
+.ChefCard .ChefName {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.ChefCard .ChefLevel {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+
+.SoMe {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    object-fit: cover;
+}
+
+.SoMe img {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+
+.TAAwrapper {
+    margin: 50px 0;
+    padding: 40px 120px;
+    background-color: var(--oliveGreenHerbal);
+    width: 100%;
+}
+
+.videogrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.videoitem {
+    padding-left: 10px;
+}
+
+.videothumb {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.videoitem p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--whiteWarm);
+}
+
+.spacer {
+    height: 200px;
+}
+
+
 
 
 
