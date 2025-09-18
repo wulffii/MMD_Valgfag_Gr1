@@ -280,6 +280,8 @@ nav {
 .Recipes {
     padding: 0 120px;
     margin: 50px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -325,17 +327,99 @@ nav {
     background-color: var(--earthyTerracotta);
     text-decoration: none;
     color: white;
-    float: right;
+    align-self: flex-end;
     font-weight: 700;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 
+.split {
+    
+    display: flex;
+    padding: 0;
+    
+    height: 500px;
+    align-items: stretch;
+    margin: 50px 0;
+}
+
+.leftcard {
+    width: 50%;
+    height: 100%;
+}
+
+.leftcard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.leftcard .leftcard-box {
+    background-color: var(--whiteWarm);
+    border-radius: 12px;
+    position: relative;
+    top:-160px;
+    left:90px;
+    width: 240px;
+    padding: 12px 12px;
+    font-size: 16px;
+}
+
+.rightcard {
+    width: 50%;
+}
+
+.rightcard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rightcard .rightcard-box {
+        background-color: var(--whiteWarm);
+            border-radius: 12px;
+            position: relative;
+            top: -160px;
+            left: 90px;
+            width: 240px;
+            padding: 12px 12px;
+            font-size: 16px;
+}
+
+.leftcard, .rightcard {
+    border: 2px solid var(--charcoalBlack);
+}
+
+.FoodStories {
+    margin: 0 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.COTD {
+    background-color: var(--mallardBlue);
+}
+
+.COTDwrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 0 120px;
+}
 
 
+.ChefCard {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
 
-
-
-
+.ChefCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
