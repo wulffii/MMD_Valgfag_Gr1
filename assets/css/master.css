@@ -618,6 +618,89 @@ a:hover {
 
 /* Chef Profile Page Styles her */
 
+.ProfileCard {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    grid-template-areas:
+    "info pic"
+    "bio  social";
+    padding: 0 120px;
+}
+
+.ProfileInfo {
+    grid-area: info;
+    display: flex;
+    align-items: center;
+}
+
+.ProfileBio {
+    grid-area: bio;
+    margin-top: -200px;
+}
+
+.ProfilePic {
+    grid-area: pic;
+}
+
+.ProfileSocial {
+    grid-area: social;
+}
+
+.ProfileInfo h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.Followers {
+    font-size: 14px;
+    margin-left: 1rem;
+    color: var(--charcoalBlack);
+}
+
+.Follow {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 430px;
+    gap: 10px;
+}
+
+.follow-btn {
+    margin: 0;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--mallardBlue);
+    color: var(--whiteWarm);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ProfilePic img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.ProfileBio p {
+    font-size: 22px;
+
+}
+
+.ProfileSocial {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.ProfileSocial a img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
 .chef_profile_page {
     background-color: var(--whiteWarm);
 }
@@ -677,6 +760,14 @@ a:hover {
 .food_story_card:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.chefrecipes {
+    margin: -40px 0 20px 0;
+}
+
+.recipe_on_chef {
+    background-color: var(--oliveGreenHerbal);
 }
 
 
