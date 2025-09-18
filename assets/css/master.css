@@ -473,6 +473,11 @@ nav {
 
 
 /* Food Story Page Styles her */
+.food_story_page {
+    background-color: var(--whiteWarm);
+}
+
+
 .header_food_story {
     top: 0;
     left: 0;
@@ -518,17 +523,36 @@ nav {
     cursor: pointer;
 }
 
-.icon-block:hover {
-    color: black;
-}
 
-.icon {
+.fa-heart {
     font-size: 48px;
     margin-bottom: 3px;
 }
 
 .gem-icon {
     font-size: 48px;
+    opacity: 1.0;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.fa-heart.liked {
+    color: red;
+    animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .hero_image_food_story img {
@@ -560,7 +584,6 @@ h1 {
 .content section {
     margin-bottom: 3rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid #eee;
 }
 
 .content h2 {
@@ -578,6 +601,7 @@ h1 {
     height: 300px;
     object-fit: cover;
     margin-top: 1rem;
+    border-radius: 12px;
 }
 
 .sidebar {
@@ -589,32 +613,46 @@ h1 {
 
 .author-card {
     text-align: center;
-    background-color: var(--NeutralGrey);
+    background-color: #FFF;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.author-card p {
+    text-align: left;
+    padding-inline: 0.5rem;
+    margin: 1rem;
 }
 
 .author-card img {
-    width: 100px;
+    width: 207px;
+    height: 207px;
     border-radius: 50%;
-    margin-bottom: 0.5rem;
+    margin-block: 0.5rem;
+    object-fit: cover;
 }
 
 .social-links {
-    display: flex;
-    justify-content: center;
+display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
-.social-links a {
-    width: 30px;
-    height: 30px;
-    display: block;
-    background: #ccc;
-    border-radius: 50%;
+.social-links i {
+    font-size: 4rem;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .sidebar h3 {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-block: 1.5rem;
     color: #111;
 }
 
@@ -622,6 +660,22 @@ h1 {
     background: #f0f0f0;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 6px;
+}
+
+.story-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.story-info p:nth-of-type(1) {
+    font-size: 18px;
+}
+
+.story-info p:nth-of-type(2) {
+    font-size: 14px;
+    margin: 0;
 }
 
 .story-card .story-image {
