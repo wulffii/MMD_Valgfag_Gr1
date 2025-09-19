@@ -336,10 +336,11 @@ a.author:hover {
     padding: 20px;
 }
 
-.COTD h3 {
+.COTD h2 {
     color: var(--whiteWarm);
-    font-size: var(--fs_h3_desktop);
+    font-size: var(--fs_h2_desktop);
     margin-left: 120px;
+    padding: 0;
 }
 
 .COTDwrapper {
