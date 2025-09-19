@@ -75,7 +75,6 @@ p {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 h1 {
@@ -123,6 +122,7 @@ nav {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: var(--fs_bold);
     font-size: var(--fs_h3_desktop);
+    color: white;
 }
 
 .search i {
@@ -207,6 +207,10 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(222px, 1fr));
     gap: 30px;
+}
+
+.card-grid a {
+    color: var(--charcoalBlack);
 }
 
 .card img {
