@@ -13,7 +13,7 @@ sans-serif; */
 :root {
     /* farver */
     --whiteWarm: #FAF9F7;
-    --charcoalBlack: #2B2B2B;
+    --font: #2B2B2B;
     --mallardBlue: #264653;
     --elegantBurgundyRed: #7B2C2C;
     --warmMustardYellow: #E9C46A;
@@ -92,7 +92,6 @@ body {
     background-color: var(--whiteWarm);
 }
 
-
 /* Navigation Styling */
 
 nav {
@@ -121,9 +120,9 @@ nav {
 
 .menu li a{
     text-decoration: none;
-        font-family: Helvetica, Arial, sans-serif;
-            font-weight: var(--fs_bold);
-            font-size: var(--fs_h3_desktop);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: var(--fs_bold);
+    font-size: var(--fs_h3_desktop);
 }
 
 .search i {
@@ -131,104 +130,8 @@ nav {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Landing Page Styles her */
+
 a {
     transition: all 0.3s ease-in-out;
 }
@@ -262,7 +165,7 @@ a:hover {
 }
 
 .Featured-Card h1 {
-    font-size: 34px;
+    font-size: 36px;
     margin: 0;
     padding: 0;
 }
@@ -284,7 +187,6 @@ a:hover {
     color: var(--whiteWarm);
     align-self: flex-end;
 }
-
 
 .Recipes {
     padding: 0 120px;
@@ -331,7 +233,6 @@ a.author:hover {
     text-decoration: underline;
         transform: scale(1.0);
 }
-
 
 .author {
     display: flex;
@@ -409,14 +310,14 @@ a.author:hover {
 }
 
 .rightcard .rightcard-box {
-        background-color: var(--whiteWarm);
-            border-radius: 12px;
-            position: relative;
-            top: -160px;
-            left: 90px;
-            width: 240px;
-            padding: 12px 12px;
-            font-size: 16px;
+    background-color: var(--whiteWarm);
+    border-radius: 12px;
+    position: relative;
+    top: -160px;
+    left: 90px;
+    width: 240px;
+    padding: 12px 12px;
+    font-size: 16px;
 }
 
 .leftcard, .rightcard {
@@ -435,10 +336,11 @@ a.author:hover {
     padding: 20px;
 }
 
-.COTD h3 {
+.COTD h2 {
     color: var(--whiteWarm);
-    font-size: var(--fs_h3_desktop);
+    font-size: var(--fs_h2_desktop);
     margin-left: 120px;
+    padding: 0;
 }
 
 .COTDwrapper {
@@ -559,94 +461,6 @@ a.author:hover {
     height: 200px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Chef Profile Page Styles her */
 
 .ProfileCard {
@@ -717,7 +531,6 @@ a.author:hover {
 
 .ProfileBio p {
     font-size: 22px;
-
 }
 
 .ProfileSocial {
@@ -801,102 +614,6 @@ a.author:hover {
 .recipe_on_chef {
     background-color: var(--oliveGreenHerbal);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Food Story Page Styles her */
 
@@ -1141,107 +858,10 @@ h1 {
     color: #444;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer Styles her */
 
 footer {
     background-color: #2c4a5b;
-    /* similar to your screenshot */
     color: #ffffff;
     padding: 2rem;
     display: flex;
@@ -1253,9 +873,7 @@ footer {
     display: flex;
     justify-content: space-around;
     gap: 10rem;
-    /* space between columns */
     flex-wrap: wrap;
-    /* optional: wrap on smaller screens */
 }
 
 .quick_shortcuts {
@@ -1281,108 +899,7 @@ footer {
 
 .footer_note {
     margin-top: 3rem;
-    /* space from columns */
     text-align: center;
-    /* center text */
     width: 100%;
-    /* ensure it spans the footer width */
     font-size: 0.8rem;
-    /* keep your current font size */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
