@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plated</title>
     <link rel="stylesheet" href="./assets/css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="./assets/js/script.js" defer></script>
 </head>
 <body>
@@ -17,17 +18,17 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Chefs</a></li>
-                    <li><a href="#">Recipes</a></li>
-                    <li><a href="#">Food Stories</a></li>
-                    <li><a href="#">Tips & Advice</a></li>
-                    <li><a href="#">Kitchenware</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chefs.html">Chefs</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="foodStories.html">Food Stories</a></li>
+                    <li><a href="tipsAndAdvice.html">Tips & Advice</a></li>
+                    <li><a href="kitchenware.html">Kitchenware</a></li>
                 </ul>
             </div>
             <div class="search">
                 <input type="text" placeholder="Search...">
-                <button disabled></button>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </nav>
     </header>
@@ -46,12 +47,12 @@
             <article class="card-grid">
                 <div class="card">
                     <img src="./assets/img/fried_chicken_Nigella_Lawson.jpg" alt="">
-                    <p>Fried Chicken Sandwich</p>
-                        <div class="author">
+                    <p>Fried Chicken</p>
+                        <a href="chefs.html" class="author">
                             <img src="./assets/img/nigella_lawson_1x1.jpg" alt="">
                             <p>Nigella Lawson</p>
-                        </div>
-                </div>
+                        </a>
+                </div>    
                 <div class="card">
                     <img src="./assets/img/express_lasagne_mary_berry.jpg" alt="">
                     <p>Express Lasagne</p>
@@ -85,7 +86,7 @@
                         </div>
                 </div>
             </article>
-            <a href="#" class="allrecipes">View all recipes</a>
+            <a href="recipes.html" class="allrecipes">View all recipes</a>
         </section>
 
         <section class="split">
@@ -106,16 +107,16 @@
         </section>
 
 <section class="FoodStories">
-    <h2>Our top rated recipes this week</h2>
+    <h2>Hot Food Stories</h2>
     <article class="card-grid">
-        <div class="card">
-            <img src="./assets/img/smashed_potato_salad_23717_16x9.jpg" alt="">
-            <p>The potato salad update social media is obsessed with</p>
+        <a href="foodStories.html" class="card">
+            <img src="./assets/img/pancake_with_fruits.jpg" alt="">
+            <p>Three summer food trends to watch out for</p>
             <div class="author">
                 
-                <p>Florence Duck</p>
+                <p>Ainsley Harriot</p>
             </div>
-        </div>
+        </a>
         <div class="card">
             <img src="./assets/img/korean_ingredient.jpg" alt="">
             <p>The Korean ingredients we should all be stocking up on</p>
@@ -158,7 +159,7 @@
     <h3>Chef of The Day</h3>
     <article class="COTDwrapper">
     <div class="ChefCard">
-        <img src="./assets/img/ultra_food_affect_brain.jpg" alt="">
+        <img src="./assets/img/ainsley_harriott_16x9.jpg" alt="">
         <p class="ChefName">Ainsley Harriott</p>
         <p class="ChefLevel">Professional Chef</p>
         <div class="SoMe">
@@ -170,9 +171,11 @@
     </div>
     
     <div class="ChefCard">
-        <img src="./assets/img/ultra_food_affect_brain.jpg" alt="">
+        <a href="chefs.html">
+        <img src="./assets/img/nigella_lawson_16x9.jpg" alt="">
         <p class="ChefName">Nigella Lawson</p>
         <p class="ChefLevel">Amateur Chef</p>
+        </a>
         <div class="SoMe">
             <a href="#"><img src="./assets/img/facebook-brands-solid-full.png" alt=""></a>
             <a href="#"><img src="./assets/img/square-x-twitter-brands-solid-full.png" alt=""></a>
@@ -182,7 +185,7 @@
     </div>
     
     <div class="ChefCard">
-        <img src="./assets/img/ultra_food_affect_brain.jpg" alt="">
+        <img src="./assets/img/poppy_otoole_16x9.jpg" alt="">
         <p class="ChefName">Poppy O'Toole</p>
         <p class="ChefLevel">Amateur Chef</p>
         <div class="SoMe">
@@ -194,7 +197,7 @@
     </div>
     
     <div class="ChefCard">
-        <img src="./assets/img/ultra_food_affect_brain.jpg" alt="">
+        <img src="./assets/img/aiden_byrne_16x9.jpg" alt="">
         <p class="ChefName">Aiden Byrne</p>
         <p class="ChefLevel">Professional Chef</p>
         <div class="SoMe">
@@ -252,7 +255,7 @@
             </div>
         </div>
     </article>
-    <a href="#" class="allrecipes">View all Kitchenware</a>
+    <a href="kitchenware.html" class="allrecipes">View all Kitchenware</a>
 </section>
 
 <section class="TAAwrapper">
