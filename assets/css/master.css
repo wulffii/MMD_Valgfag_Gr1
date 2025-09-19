@@ -65,17 +65,17 @@ h6 {
     color: var(--font);
 }
 
-p,
-a {
+p {
     font-family: "helvetica", sans-serif;
     font-weight: var(--fs_medium);
     line-height: 150%;
-    color: var(--font);
-}
-
-p {
     margin-bottom: var(--text_spacer_desktop);
     font-size: var(--p_desktop);
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 h1 {
